@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+   
+<div id="row"></div>
+<script>
+    let row = '';
+for (let i = 1; i <= 5; i++) {
+  for (let j = 1; j <= i; j++) {
+    row += '* ';
+  }
+  row += '<br>';
+}
+document.getElementById('row').innerHTML = row;
+
+</script>
+<br>
+
+
+<div id="triangle"></div>
+
+
+
+<script>
+  //const height = prompt("Nhập chiều cao của tam giác: ");
+ 
+   let triangle = "";
+ 
+   for (let i = 5; i >= 1; i--) {
+     let row = "";
+ 
+     for (let j = 1; j <= i; j++) {
+       row += "* ";
+     }
+ 
+     triangle += row + "<br>";
+   }
+ 
+   document.getElementById("triangle").innerHTML = triangle;
+ </script>
+<br>
+
+
+
+<script>
+  for(i=0;i<=7;i++){
+    let a='*';
+    for(j=0;j<=13;j++)
+  
+  if(
+    (i==1&&(j==3||j==4||j==5||j==9||j==10||j==11))||
+    (i==2&&(j==2||j==6||j==8||j==12))||
+    (i==3&&(j==1||j==7||j==13))||
+    (i==4&&(j==2||j==12))||
+    (i==5&&(j==4||j==10))||
+    (i==6&&(j==5||j==9))||
+    (i==7&&(j==7))
+
+    )
+    {
+      a+='*';
+    }
+    else 
+    {
+      a+='&nbsp;&nbsp; ';
+    }
+    document.write(a+"<br>");
+
+  }
+
+</script>
+
+<br>
+
+
+<script>
+  
+  for (let row = 1; row <= 8; row++) {
+            let a = '';
+            for (let col = 1; col <= 20; col++) {
+                if (row == 1 || row == 8|| col == 1 || col == 14) {
+                     a += '*';
+                } else {
+                     a += '&nbsp;&nbsp; ';
+                }
+            }document.write(a+ '<br>');
+            
+          }
+        
+
+            
+</script>
+
+
+
+
+
+</body>
+</html>
